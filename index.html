@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="SASS\main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <ul>
+          <h2><span class="blue-text">Blue</span> Developer</h2>
+          <li class="demo"><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown">
+            <a href="product.html" class="dropbtn">Products</a>
+            <div class="dropdown-content">
+              <a href="#">AWS Snowcone</a>
+              <a href="#">Smart home security systems</a>
+              <a href="#">Connected appliances</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="service.html" class="dropbtn">Services</a>
+            <div class="dropdown-content">
+              <a href="#">Web Development</a>
+              <a href="#">App Development</a>
+              <a href="#">Iot Development</a>
+            </div>
+          <li><a href="contact.html">Contact</a></li>
+
+
+    </ul>
+    <div class="box">
+        <div class="container1">
+          <h3 data-toggle="tooltip" title="Tooltip On!" style="color: red">Web Development :-</h3>
+          <p style="font-weight: bold; font-family: verdana">Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web-based internet applications, electronic businesses, and social network services.</p>
+        </div>
+
+        <div class="container2">
+          <h3 data-toggle="tooltip" title="Tooltip On!" style="color: red">App Development :-</h3>
+          <p style="font-weight: bold; font-family: verdana">Mobile app development is the act or process by which a mobile app is developed for mobile devices, such as personal digital assistants, enterprise digital assistants or mobile phones. These applications can be pre-installed on phones during manufacturing platforms, or delivered as web applications using server-side or client-side processing (e.g., JavaScript) to provide an "application-like" experience within a Web browser. Application software developers also must consider a long array of screen sizes, hardware specifications, and configurations because of intense competition in mobile software and changes within each of the platforms.</p>
+        </div>
+
+        <div class="container3">
+          <h3 data-toggle="tooltip" title="Tooltip On!" style="color: red">Iot Developent :-</h3>
+          <p style="font-weight: bold; font-family: verdana">IoT development is the process of developing IoT applications and products that can be controlled remotely and can be used to monitor the connected product's condition or environment via sensors and external data sources. Custom IoT Development is done to meet the specific requirements of a business.</p>
+        </div>
+    </div>
+
+
+    <div class="container">
+
+          <!-- Trigger the modal with a button -->
+          <button type="button" class="btn btn-info btn-lg" id="btn1" data-toggle="modal" data-target="#myModal">Feedback</button>
+
+            <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          
+          <div class="modal-body">
+              <div class="form-box">
+                      <div id="login-case">
+                            <h3>Feedback Form</h3>
+                                  
+                            <form method="POST" action="#" class="validate">
+                                  <div class="form-group">
+                                        <label class="form-control-label">E-mail</label>
+                                        <input type="email" class="form-control" data-fv-notempty="true">
+                                  </div><!-- .form-group -->
+
+                                  <div class="form-group">
+                                        <label class="form-control-label">Message</label>
+                                        <input type="text" class="form-control" data-fv-notempty="true">
+                                  </div><!-- .form-group -->
+                                      <button type="button" >Submit</button>
+                                      <button type="button">Cancel</button>
+                            </form>
+                      </div><!-- #login-case -->
+            </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+        </div><!-- Modal content body-->
+        
+      </div><!-- Modal content content-->
+  </div>
+          
+    </div>
+    <script>
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();   
+        });
+    </script>
+
+
+</body>
+</html>

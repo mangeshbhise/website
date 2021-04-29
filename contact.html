@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="SASS\main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <ul>
+          <h2><span class="blue-text">Blue</span> Developer</h2>
+          <li class="demo"><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown">
+            <a href="product.html" class="dropbtn">Products</a>
+            <div class="dropdown-content">
+              <a href="#">AWS Snowcone</a>
+              <a href="#">Smart home security systems</a>
+              <a href="#">Connected appliances</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="service.html" class="dropbtn">Services</a>
+            <div class="dropdown-content">
+              <a href="#">Web Development</a>
+              <a href="#">App Development</a>
+              <a href="#">Iot Development</a>
+            </div>
+          <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+      <h1 style="text-align: center;color: Tomato">Contant Us</h1>
+      <form action="#">      
+          <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+          <input name="email" type="text" class="feedback-input" placeholder="Email" />
+          <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
+          <input type="submit" id="sub" value="SUBMIT"/ >
+          <input type="submit" id="but" value="CLEAR"/>
+
+      </form>
+
+      <button class="btn" data-toggle="popover" data-placement="bottom" data-content="Follow Us On facebook and twitter">Follow</button>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+
+      <script>
+        $(document).ready(function(){
+          $('[data-toggle="popover"]').popover();   
+        });
+      </script>
+
+
+</body>
+</html>
